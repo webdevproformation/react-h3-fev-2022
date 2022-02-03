@@ -1,3 +1,22 @@
 Ecouter une action (click) sur un élément dans un composant 
 
 Action.jsx
+
+Cas pratique créer un nouveau composant Exo3
+
+contient une variable users = [
+    { id : 1 , nom : "Alain" , isAdmin : true },
+    { id : 2 , nom : "Mario" , isAdmin : false },
+]
+
+<ul>
+    <li>Alain</li>
+    <li><button>Action<button></li> 
+</ul>
+<ul>
+    <li>Mario</li>
+    <li><button>Action<button></li>
+</ul>
+
+lorsque vous allez cliquer sur le 1er => afficher dans la console du navigateur le rôle du 1er utilisateur
+lorsque vous allez cliquer sur le 2ème => afficher dans la console du navigateur le rôle de 2ème utilisateur
