@@ -1,0 +1,12 @@
+https://github.com/webdevproformation/react-h3-fev-2022
+
+
+Deux manières de créer des composants dans React 
+
+Manière ancienne => class 
+Manière nouvelle => fonction : function ou fonction fléchée  
+
+dans le dossier src => créer un sous dossier composants
+
+créer nos composants  créer un fichier Premier.jsx  // Premier.js 
+Faire en sorte que Visual Studio donne de l'autocomplétion 
