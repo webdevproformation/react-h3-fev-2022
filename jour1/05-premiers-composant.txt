@@ -23,4 +23,14 @@ ce composant est de type class et il doit retourner le html suivant
 
 une fois le composant créé => utiliser ce composant dans App en dessous du composant <Premier / >
 
+------------------------
 
+Cas pratique :
+
+Dans le dossier src/composants créer un nouveau composant Quatrieme
+
+ce composant est de type fonctionnel et il doit retourner le html suivant
+
+<img src="https://via.placeholder.com/200x100" alt="">
+
+une fois le composant créé => utiliser ce composant dans App en dessous du composant <Quatrieme / >

@@ -13,7 +13,7 @@ const Troisieme = () => {
 }
 export default Troisieme ; // import Troisieme from "./.../Troisieme"
 
-export const AutreComposant = () => { // import {AutreComposant } from "./.../Troisieme"
+export const AutreComposant = () => { // import { AutreComposant } from "./.../Troisieme"
     return <p>autre</p>
 }
 
