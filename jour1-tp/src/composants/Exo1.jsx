@@ -11,7 +11,6 @@ export function Exo1(){
     }
     // janvier => getMonth() => 0
     // decembre => getMonth() => 11
-
     // 03/02/2022
 
     return <React.Fragment>
