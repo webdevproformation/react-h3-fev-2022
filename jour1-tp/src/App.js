@@ -14,10 +14,14 @@ import { StateC } from './composants/StateC';
 import { StateF2 } from './composants/StateF2';
 import { StateF3 } from './composants/StateF3';
 import { Exo4 } from './composants/Exo4';
+import { Img } from './composants/Img';
 
 
 function App() {
   return  <>
+    <div>
+      <Img />
+    </div> 
     <Exo4 />
     <StateF3 />
     <StateF2 />

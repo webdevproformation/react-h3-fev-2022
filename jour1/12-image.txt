@@ -1,0 +1,11 @@
+si je veux afficher des images 
+
+si l'image est sur internet 
+
+<img src="https://via.placeholder.com/120x50" alt="">
+
+une image qui n'est pas sur internet 
+
+ajouter un nouveau dossier public => img 
+
+Img
