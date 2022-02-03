@@ -1,0 +1,17 @@
+
+
+
+export const A = () => {
+    return <p></p>
+}
+
+<A />
+
+
+
+export const A = ( props ) => { // props = { source:"http", couleur:"rouge", show:"false" }
+    return <p></p>
+}
+
+
+<A source="http" couleur="rouge" show="false" />

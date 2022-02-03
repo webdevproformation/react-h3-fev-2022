@@ -15,10 +15,12 @@ import { StateF2 } from './composants/StateF2';
 import { StateF3 } from './composants/StateF3';
 import { Exo4 } from './composants/Exo4';
 import { Img } from './composants/Img';
+import { A } from './composants/A';
 
 
 function App() {
   return  <>
+    <A source="http" couleur="rouge" />
     <div>
       <Img />
     </div> 
