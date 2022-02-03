@@ -13,10 +13,12 @@ import { StateF } from './composants/StateF';
 import { StateC } from './composants/StateC';
 import { StateF2 } from './composants/StateF2';
 import { StateF3 } from './composants/StateF3';
+import { Exo4 } from './composants/Exo4';
 
 
 function App() {
   return  <>
+    <Exo4 />
     <StateF3 />
     <StateF2 />
     <StateC />
