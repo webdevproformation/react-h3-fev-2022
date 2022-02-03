@@ -1,0 +1,23 @@
+créer le composant Exo4
+
+dans ce composant vous allez voir deux variables / states 
+
+show par défaut il vaut false 
+etudiants = [
+    {id : 1 , nom : "Mario" , age : 20 },
+    {id : 2 , nom : "Luigi" , age : 25 },
+    {id : 3 , nom : "Peach" , age : 18 },
+]
+
+
+dans la vue du composant 
+button
+
+<ul>
+    <li>Mario - 20</li>
+    <li>Luigi - 25</li>
+    <li>Peach - 18</li>
+</ul>
+
+si vous cliquez un fois sur le bouton masquer la liste ul
+si vous recliquez sur le bouton afficher la liste ul
