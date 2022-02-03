@@ -1,0 +1,17 @@
+support est accessible à l'adresse suivante : 
+
+https://formation.webdevpro.net/react
+login : react
+mot de passe : fb
+
+-------------------
+
+Planning aujourd'hui et demain !! 
+
+react ce matin / après midi Cours 
+             react demi matin / après midi (dernier 1h30 => cas pratique évalué sur Typescript)
+             le 4/02/2022 
+
+=> cours disponible sur un github (que je vais vous donner)
+
+=> Présentation de 

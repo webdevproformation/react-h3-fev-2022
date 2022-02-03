@@ -1,0 +1,49 @@
+utiliser react 
+
+installé sur notre ordinateur NodeJS 
+
+https://nodejs.org/fr/ =>  télécharger et installer 
+
+Redémarrer VSC 
+
+node --version
+
+-----------------------------
+
+installer un client en ligne de commande qui va permettre de nos projets React
+
+npx create-react-app jour1-tp
+
+
+Avant
+
+https://create-react-app.dev/docs/getting-started/
+npm i -g create-react-app # installation en global 
+create-react-app jour1-tp
+
+create-react-app --version
+
+npm un -g create-react-app # desinstallation du binaire react en global
+
+
+// architecture de React 
+
+public/index.html 
+
+<div id="root"></div> => tout le code js que vous allez écrire / composant que l'on va créer vous être 
+transformer ET injecter dans cette balise html id root 
+
+un sous dossier img => des images que l'on voudra afficher !! / fichier pdf ... ressources publiques 
+
+-------------------------------- 
+
+src => dossier source que l'on va passer 99% de notre temps 
+
+fichier important 
+
+    index.js liaison entre Composant racine App.js   <======> index.html 
+
+import ReactDOM from 'react-dom';
+
+reactNative => Composant smartphone 
+jsx / js     =>  Kotlin 

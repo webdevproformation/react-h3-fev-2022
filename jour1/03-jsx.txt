@@ -1,0 +1,55 @@
+jsx 
+
+balise classique <h1> <p> 
+<div></div>
+
+balise orpheline  seulement la balise ouvrante 
+<img src="" alt="" /> => sur la balise ouvrant doit avoir un / à la fin !! 
+<input type="text" />
+<br />
+
+balise peut leur donner des attributs 
+
+<p id="toto" title="tata" className=""></p> => class mot clé déjà utilisé 
+
+<label for=""></label> => pas valide 
+<label htmlFor=""></label> => jsx valide 
+
+{} interpolation => exécuter du code dans votre jsx / récupérer le contenu d'une variable 
+
+<p id={} >{}</p>
+
+
+Babel => https://babeljs.io/repl
+
+comment fonctionne ReactDOM.render
+
+// composant en jsx 
+
+const composant = ( ) => {
+return  <h1>je suis un composant</h1>
+}
+
+<> </> => balise qui permet d'englober le jsx de votre composant (sans être rendu dans le DOM)
+<React.Fragment></React.Fragment>
+
+Composant en jsx ne peut avoir qu'une seule balise parent 
+
+
+const composant2 = () => { 
+    return (
+        <div>je suis un composant</div>
+    )
+}
+
+const composant3 = () => { 
+    return <h1>toto</h1>
+        <div>je suis un composant</div> {/* Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</> */}   
+}
+
+const composant4 = () => { 
+    return <>
+        <h1>toto</h1>
+        <div>je suis un composant</div> {/*  */}   
+    </>
+}

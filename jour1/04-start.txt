@@ -1,0 +1,19 @@
+npx create-react-app jour1-tp # créer le projet 
+
+start le projet 
+
+cd jour1-tp
+
+npm start => npx react-scripts start
+
+// pause café => rdv 10h45 bon café @ toute suite !!! 
+
+typescript 
+
+tsc --watch .ts => .js 
+
+babel  jsx  => js React.createElement React.render  => 
+                 document.querySelector("#root").innerHTML 
+
+                 
+ 

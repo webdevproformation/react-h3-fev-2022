@@ -1,0 +1,53 @@
+React / ReactJs / React.js => la même chose 
+
+projet qui a été créé par des équipes de Facebook 
+diffusé à partir de 2011 
+
+logo electron 
+
+librairie qui permet de créer interface graphique (User Interface) 
+
+- jsx => fusion entre xml / html et javascript => html 
+- interface graphique que l'on va créer vont être découpé en COMPOSANT <=> chaque élément graphique 
+- lien les uns aux autres sous forme d'arbre  
+
+App => composant racine 
+
+---------------------------
+
+deux manières de créer des composants 
+
+Manière à l'ancienne => en utilisant la syntaxe de class 
+Nouvelle manière => en utilisant la syntaxe fonctionnelle 
+
+---------------------------
+
+React va utiliser shadow DOM => injectecter l'ensemble des éléments graphiques dans le DOM 
+                             => cas de modification application (ajout d'information) React va modifier uniquement la partie nécessaire 
+
+---------------------------
+
+js =>  version en javascript (celle que l'on va voir ensemble)
+
+ts => Typage / Meilleure documentation avec ton IDE / Code plus prévisible (réduire le nombre d'erreur avant la compilation de ton projet)
+
+=> faire un ou deux projet(s) en tsx 
+
+---------------------------
+
+Angular / React =>
+
+Angular :
+Framework => très grosse librairie => une fois que vous avez installé Angular (plus besoin d'autres choses)
+      requete ajax HttpClientModule / Material / animation   
+
+React : 
+Librairie => gérer les éléments d'un UI 
+      ajouter des fonctionnalités en plus pour pouvoir faire requête ajax (axios)
+
+---------------------------
+
+
+
+
+                    
