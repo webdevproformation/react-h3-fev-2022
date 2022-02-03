@@ -1,0 +1,6 @@
+if () dans les composants 
+
+
+deux manières de faire 
+    => condition dans la fonction dans le composant => { fonction() }
+    =>  { condition && .... }

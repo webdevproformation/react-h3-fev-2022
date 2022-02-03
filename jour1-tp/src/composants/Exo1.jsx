@@ -3,7 +3,7 @@ import React from "react";
 export function Exo1(){
     const data = [
         { id : 1 , titre : "Article1" , dt_creation : new Date() },
-        { id : 2 , titre : "Article2" , dt_creation : new Date() },
+        { id : 1 , titre : "Article2" , dt_creation : new Date() },
     ];
 
     function getDate(dt){
@@ -15,7 +15,7 @@ export function Exo1(){
 
     return <React.Fragment>
     {data.map((article , index) => {
-        const {titre , dt_creation } = article ; // déstructuration article qui est { id : 1 , titre : "Article1" , dt_creation : new Date() }
+        const {titre , id , dt_creation } = article ; // déstructuration article qui est { id : 1 , titre : "Article1" , dt_creation : new Date() }
         return <article key={index}> 
         <h2>{ titre }</h2>
         <time>{ getDate(dt_creation) }</time>
@@ -24,3 +24,4 @@ export function Exo1(){
     )}
     </React.Fragment>
 }
+// 13h30 
