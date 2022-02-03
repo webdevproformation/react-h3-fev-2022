@@ -3,6 +3,7 @@ import Premier from "./composants/Premier" ;
 import { Deuxieme } from "./composants/Deuxieme" ;
 import Troisieme , {AutreComposant} from './composants/Troisieme';
 import { Quatrieme } from './composants/Quatrieme';
+import { Boucle } from './composants/Boucle';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Troisieme />
     <AutreComposant />
     <Quatrieme />
+    <Boucle />
   </>
 }
 
