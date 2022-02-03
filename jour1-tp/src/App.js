@@ -8,10 +8,14 @@ import { Exo1 } from './composants/Exo1';
 import { Condition } from './composants/Condition';
 import { Exo2 } from './composants/Exo2';
 import { Action } from './composants/Action';
+import { Exo3 } from './composants/Exo3';
+import { StateF } from './composants/StateF';
 
 
 function App() {
   return  <>
+    <StateF />
+    <Exo3 />
     <Action />
     <Exo2 />
     <Condition />

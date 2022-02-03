@@ -1,0 +1,28 @@
+
+
+function A{
+    let eee = "....." ; 
+
+    function action(){
+        eee = "autre valeur"; 
+        // traitement en + qui vont sélectionner p et son contenu et rafraichir sa valeur
+        // document.querySelector("p").innerHTML = eee 
+    }
+
+    return (
+        <button onClick={action}>modif</button>
+        <p>{ eee }</p>
+    )
+    
+}
+
+// state => l'ensemble des variables locales au composant 
+// variable et leur valeur ne sont visibles et utilisables QUE dans le composant 
+
+// si jamais React détecte que la valeur du state est modifié 
+// automatique il va mettre à jour la valeur du state dans la vue 
+
+
+// fonctionnel ( nouvelle méthode )
+
+// class 
