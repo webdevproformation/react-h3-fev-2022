@@ -10,10 +10,12 @@ import { Exo2 } from './composants/Exo2';
 import { Action } from './composants/Action';
 import { Exo3 } from './composants/Exo3';
 import { StateF } from './composants/StateF';
+import { StateC } from './composants/StateC';
 
 
 function App() {
   return  <>
+    <StateC />
     <StateF />
     <Exo3 />
     <Action />
