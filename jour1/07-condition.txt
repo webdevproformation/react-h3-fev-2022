@@ -4,3 +4,43 @@ if () dans les composants
 deux manières de faire 
     => condition dans la fonction dans le composant => { fonction() }
     =>  { condition && .... }
+
+
+Créer le composant Exo2
+
+contient une variable users = [
+    { id : 1 , nom : "Alain" , isAdmin : true },
+    { id : 2 , nom : "Mario" , isAdmin : false },
+]
+
+
+parcourir chaqué élement de users
+
+<ul>
+    <li>Alain</li>
+    <li>est le gestionnaire du site</li>
+</ul>
+<ul>
+    <li>Mario</li>
+    <li>n'est pas le gestionnaire du site</li>
+</ul>
+
+
+----------------------------------------
+
+
+
+const formatDate = (day,month,year) =>{
+
+    let jour,mois;
+
+    if(day >= 10) jour = day; else jour = '0'+day;
+
+    if((month+1) >= 10) mois = month+1; else mois = '0'+(month+1);  
+
+    return jour+'/'+mois+'/'+year;
+
+}
+
+ "0"+ (new Date()).getDate() => "03"
+ "0"  +(new Date()).getDate() => "010".slice(-2)

@@ -7,7 +7,7 @@ export function Exo1(){
     ];
 
     function getDate(dt){
-        return dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear()
+        return ("0" + dt.getDate()).slice(-2) + "/" + ("0" + (dt.getMonth() + 1)).slice(-2) + "/" + dt.getFullYear()
     }
     // janvier => getMonth() => 0
     // decembre => getMonth() => 11
