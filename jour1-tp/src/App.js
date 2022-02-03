@@ -7,10 +7,12 @@ import { Boucle } from './composants/Boucle';
 import { Exo1 } from './composants/Exo1';
 import { Condition } from './composants/Condition';
 import { Exo2 } from './composants/Exo2';
+import { Action } from './composants/Action';
 
 
 function App() {
   return  <>
+    <Action />
     <Exo2 />
     <Condition />
     <Exo1 />
