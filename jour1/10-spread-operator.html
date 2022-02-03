@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const state = {
+            nom : "Alain",
+            competences : ["js" , "angular" , "node"]
+        }; 
+
+        // modifier la variable state tout en gardant sa valeur initiale 
+        // ne pas faire muter (modifier) la valeur de state 
+
+        // state.nom = "Pierre"; // modifier la valeur de state 
+
+        //console.log(state); // connaitre la valeur initiale de state => pas possible 
+        
+        // copier les variable state dans une variable et je modifie la dans la copie
+
+        /* const stateModif = state ; // copie par valeur MAIS copie par référence 
+
+        stateModif.nom = "Pierre" ; 
+        state.competences = "toto" ; 
+
+        console.log(stateModif); // OK 
+        console.log(state);     // c'est aussi modifié .....  */
+
+        // comment faire pour effectuer une copie par valeur : technique 1
+
+        /* const stateModif = Object.assign({} , state ) // copie par VALEUR dans stateModif
+
+        stateModif.nom = "nouveau nom";
+
+        console.log(state);
+        console.log(stateModif); */
+
+        // comment faire pour effectuer une copie par valeur : technique 2
+
+        /* const stateModif = {...state} ; // copie par valeur légère / shallow copy
+
+        stateModif.nom = "nom modifié";
+
+        console.log(state);
+        console.log(stateModif); */
+
+
+        const stateModif = {...state , nom : "modification"} ; // copie par valeur légère ET modifier la valeur de la propriété nom qui est copiés dans stateModif (fusion)
+
+        console.log(state);
+        console.log(stateModif);
+
+        // react => redux => fonction pur // mutabilité des données 
+
+    </script>
+</body>
+</html>
