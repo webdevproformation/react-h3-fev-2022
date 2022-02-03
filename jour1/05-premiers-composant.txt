@@ -22,3 +22,5 @@ ce composant est de type class et il doit retourner le html suivant
 <p>lorem ipsum</p>
 
 une fois le composant créé => utiliser ce composant dans App en dessous du composant <Premier / >
+
+
