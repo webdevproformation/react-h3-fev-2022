@@ -6,6 +6,7 @@ export class CompteurC extends Component{
         interval : null
     }
 
+    // 13h40 !!!! bon appétit !!!
     constructor(){
         super();
         console.log("le composant CompteurC est créé / mais pas dans le DOM")
@@ -48,6 +49,4 @@ export class CompteurC extends Component{
             <span>{state.nb}</span>
         </div>
     }
-
-    
 }
