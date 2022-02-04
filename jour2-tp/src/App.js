@@ -4,11 +4,12 @@ import { Menu } from './composants/Menu';
 import { Articles } from './composants/Articles';
 import { Galerie } from './composants/Galerie';
 import { CompteurC } from './composants/CompteurC';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { CompteurF } from './composants/CompteurF';
 import { CompteurFSuite } from './composants/CompteurFSuite';
 import { CompteurState } from './composants/CompteurState';
 import { Exo1 } from './composants/Exo1';
+import { Routes, Route } from "react-router-dom"; 
 
 function App() {
 
@@ -18,16 +19,22 @@ function App() {
   return (
     <div className="container">
       <Menu sousTitre="H3 Hitema" />{/** Menu({ sousTitre : "H3 Hitema"}) */}
-      <Exo1 />
-      <CompteurState />
-      {show2 && <CompteurFSuite />}
-      {false && <CompteurF />}
-      <button onClick={() => setShow2(!show2) }>suppr</button>
-      <hr />
-      {show && <CompteurC />}
-      <button onClick={() => setShow(!show) }>suppr</button>
-      <Articles />
-      <Galerie />
+      <Routes>
+      <Route path="/exo1" element={<Fragment>
+        <Exo1 />
+        <CompteurState />
+        {show2 && <CompteurFSuite />}
+        {false && <CompteurF />}
+        <button onClick={() => setShow2(!show2) }>suppr</button>
+      </Fragment>} />
+        <Route path="/vie" element={<Fragment>
+              <hr />
+          {show && <CompteurC />}
+          <button onClick={() => setShow(!show) }>suppr</button>
+        </Fragment>} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/galerie" element={<Galerie />} />
+      </Routes>
     </div>
   );
 }
