@@ -1,13 +1,8 @@
-import { useEffect, useState } from "react"
+import { useUtilisateur } from "../hooks/useUtilisateurs"
 
 export const Exo1 = () => {
-    const [utilisateurs, setUtilisateurs] = useState([])
-
-    useEffect( async () => {
-        const req = await fetch("https://jsonplaceholder.typicode.com/users");
-        const users = await req.json();
-        setUtilisateurs(users)
-    } , [])
+   
+    const { utilisateurs , setUtilisateurs } = useUtilisateur(); 
 
     const deleteUserV1 = (id) => {
         const cloneUsers = [...utilisateurs];
