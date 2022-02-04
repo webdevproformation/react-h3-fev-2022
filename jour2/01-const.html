@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // donnée primitive => string / number / boolean ET que j'utilise le mot const pour créer une variable 
+
+        const a = 1 ;
+        const b = "hello" ;
+        const c = true ;
+
+        // c = "toto";  // Uncaught TypeError: invalid assignment to const 'c'
+
+
+        const formation = [1,2,3,4]; // array
+        Object.freeze(formation); 
+        // interdit 
+        // formation = "toto"; // Uncaught TypeError: invalid assignment to const 'formation'
+        // const bloque le changement de type 
+
+        formation[0] = "toto"; // changer le contenu de la variable formation
+        // formation.push("nouvelle information")
+        console.log(formation); 
+
+        const arbre = {
+            nom : "chêne",
+            age : 200
+        }
+
+        Object.freeze(arbre); // je ne veux pas que l'on puisse modifier les valeurs stockées dans l'objet 
+
+        // changement de type arbre = []; => erreur 
+        
+        // changer une valeur DANS la constante arbre 
+        arbre.nom = "toto"
+        console.log(arbre) ; 
+
+        const arbre2 = arbre ; // passage par référence 
+
+        arbre2.nom = "balbalbal" ;
+
+        console.log(arbre);
+        console.log(arbre2);
+
+        const z = "bonjour"; // vérifier que la variable n'est recréée ailleurs dans le code 
+
+        function z(){}
+
+        const y = [1,2,3]; // stockage par valeur => faux 
+                   
+        // [1,2,3]
+        // [#1234, #1235, #12346]
+
+        const w = 2 ; 
+
+    </script>
+</body>
+</html>

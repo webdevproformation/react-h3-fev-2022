@@ -23,7 +23,6 @@ export function Articles(){
         setData(cloneData);
         // console.log(data); 
     }
-
     function augmenter(idArticle){
         // const cloneData = data.map() // parcourir le tableau copier la modification dans un nouveau tableau
         const cloneData = data.map(function(d){
@@ -33,7 +32,6 @@ export function Articles(){
             }
             return d ;
         })
-
         setData( cloneData );
     }
 
