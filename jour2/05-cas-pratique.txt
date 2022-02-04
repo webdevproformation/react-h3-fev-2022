@@ -1,11 +1,13 @@
-
 créer le composant Exo1 de type fonctionnel
 
 ce composant utilisent les hook useEffect et useState
 
-par défaut créer un state utilisateurs  = []
+par défaut créer un state utilisateurs  = [
+    {},
+    {}
+]
 
-useEffect modifier la valeur utilisateurs par des données récupérer via un requete ajax https://jsonplaceholder.typicode.com/users
+useEffect modifier la valeur de utilisateurs par des données récupérer via un requete ajax https://jsonplaceholder.typicode.com/users
 
 
 afficher dans la vue du composant 

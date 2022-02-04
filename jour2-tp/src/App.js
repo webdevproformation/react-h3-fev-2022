@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { CompteurF } from './composants/CompteurF';
 import { CompteurFSuite } from './composants/CompteurFSuite';
 import { CompteurState } from './composants/CompteurState';
+import { Exo1 } from './composants/Exo1';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="container">
       <Menu sousTitre="H3 Hitema" />{/** Menu({ sousTitre : "H3 Hitema"}) */}
+      <Exo1 />
       <CompteurState />
       {show2 && <CompteurFSuite />}
       {false && <CompteurF />}
