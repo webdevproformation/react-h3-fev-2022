@@ -1,0 +1,40 @@
+support est accessible à l'adresse suivante : 
+
+https://formation.webdevpro.net/react
+login : react
+mot de passe : fb
+
+et github :
+
+https://github.com/webdevproformation/react-h3-fev-2022
+
+npx create-react-app jour2-tp
+
+cd jour2-tp 
+npm start 
+
+créer des composants => jsx 
+
+du composant => vue 
+
+state // props 
+
+src 
+
+Faire communiquer des composants les uns avec les autres 
+envoyer des informations 
+
+Parent => Composant Enfant ( props )
+
+Parent <= Composant Enfant ( déclencher une fonction dans l'ensemble
+                            qui est stockée dans le Parent )
+
+Installer Bootstrap notre projet jour2-tp 
+
+cd jour2-tp
+npm i bootstrap
+
+src/index.js
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+src/App.js
