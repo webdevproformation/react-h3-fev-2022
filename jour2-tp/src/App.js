@@ -6,17 +6,20 @@ import { Galerie } from './composants/Galerie';
 import { CompteurC } from './composants/CompteurC';
 import { useState } from 'react';
 import { CompteurF } from './composants/CompteurF';
-
+import { CompteurFSuite } from './composants/CompteurFSuite';
+import { CompteurState } from './composants/CompteurState';
 
 function App() {
 
   const [show , setShow] = useState(false)
-  const [show2 , setShow2] = useState(false)
+  const [show2 , setShow2] = useState(true)
 
   return (
     <div className="container">
       <Menu sousTitre="H3 Hitema" />{/** Menu({ sousTitre : "H3 Hitema"}) */}
-      {show2 && <CompteurF />}
+      <CompteurState />
+      {show2 && <CompteurFSuite />}
+      {false && <CompteurF />}
       <button onClick={() => setShow2(!show2) }>suppr</button>
       <hr />
       {show && <CompteurC />}
