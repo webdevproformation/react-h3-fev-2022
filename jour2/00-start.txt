@@ -38,3 +38,7 @@ src/index.js
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 src/App.js
+
+dans le dossier src/composants/Menu.jsx
+
+dans le dossier src/composants/Articles.jsx
