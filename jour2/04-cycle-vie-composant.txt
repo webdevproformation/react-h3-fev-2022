@@ -1,0 +1,18 @@
+
+props / state (useState)
+
+cycle de vie du composant 
+
+1 rentrer dans le DOM 
+
+2 présent dans le DOM ET update (si on modifie props / modification state )
+
+3 suppression du DOM 
+
+--------------------------
+
+1 composant de type class fonction spéciale 
+
+2 composant de type fonctionnel useEffet() (nouvelle manière)
+
+CompteurC.jsx
